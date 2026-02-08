@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frumusete, will you be my Valentine?</title>
+  <title>Este Victor bun la FIFA?</title>
 
   <style>
     body {
@@ -124,10 +124,10 @@
 
 <body>
 
-  <h1>Frumusete, will you be my Valentine?</h1>
+  <h1>Este Victor bun la FIFA?</h1>
 
   <div class="button-container">
-    <button class="button" id="yesButton">Yes 🐧✨</button>
+    <button class="button" id="yesButton">Yes </button>
     <button class="button1" id="noButton">No 🙃</button>
   </div>
 
@@ -141,7 +141,7 @@
   </div>
 
   <div class="gif-container">
-    <img src="mylove.gif" alt="Cute GIF">
+    <img src="victor.gif" alt="Cute GIF">
   </div>
 
   <script>
@@ -156,11 +156,11 @@
     const modalText = document.getElementById("modalText");
 
     const noTexts = [
-      "Esti sigura?",
-      "Sigura, sigura?",
-      "Daca spui nu, te alerg...",
-      "Te iau in brate si te ridic!",
-      "Spune da, da, da!!"
+      "Raspuns corect?",
+      "Raspuns corect din nou?",
+      "A avut noroc, el incearca",
+      "I s-a tras de la raceala",
+      "Ole ole!!"
     ];
 
     noButton.addEventListener("click", () => {
@@ -168,7 +168,7 @@
       if (noCount < noTexts.length) {
         noMessage.textContent = noTexts[noCount];
       } else {
-        openModal("Fie... 🙃 Dar tu tot imi esti draga!");
+        openModal("Poate data viitoare");
         return;
       }
 
@@ -200,7 +200,7 @@
     });
 
     yesButton.addEventListener("click", () => {
-      openModal("Yaaay! Ich liebe dich, Frumusete!");
+      openModal("Ei da, a avut noroc!");
     });
 
     function openModal(message) {
@@ -216,5 +216,6 @@
   </script>
 </body>
 </html>
+
 
 
